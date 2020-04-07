@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MASTER.master.cs" Inherits="MASTER" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+ 
+
+<div id="saydam1">
+
+</div>
+<div class="menudiv">
+
+<ul>
+<li><a href="ANASAYFA.aspx">ANASAYFA</a></li>
+<li><a href="HAKKIMIZDA.aspx">HAKKIMIZDA</a></li>
+<li><a href="ILETISIM.aspx">İLETİŞİM</a></li>
+<li><a href="OKUL.aspx">OKUL-AİLE</a></li>
+<li><a href="login.aspx">YÖNETİM</a></li>
+<li><a href="ETKİNLİKLER.aspx">ETKİNLİKLER</a></li>
+</ul>
+</div>
+<div id="logo"></div>
+<div id="golge"></div>
+<div id="icerik1">
+   
+    </div>
+<div id="icerik">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                                 
+        </asp:ContentPlaceHolder>
+   </div>
+  <div id="icerik2"></div>
+  
+  
+    </form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿body 
+{
+ 
+}
+*
+{
+    margin:0px 0px 2px 0px;
+    padding:0px;
+    font-family: "Segoe Print";
+}
+      
+#iceriks
+{
+   height:auto;
+   width:800px;
+   margin:auto;
+   
+}
+
+#saydam1
+{
+     background-image:url(Resimler/saydam.jpg);
+     height:40px;
+    }
+
+ .menudiv
+ {
+     margin:auto;
+     width:800px;
+     
+     }
+   .menudiv ul 
+    {
+       list-style-type:none;
+       background-color:Black;
+        }
+     .menudiv ul li
+     {
+         margin:auto;
+         float:left;
+         width:130px;
+          position:relative;
+        
+         }   
+   .menudiv ul li a
+  {
+      font-family:"Segoe Script", Times, serif;
+      font-size:16px;
+      color:#FFFFFF;
+       text-decoration: none;
+       background-color: #000000;
+       display: block;
+       border: 1px solid #000000;
+       text-align: center;
+      }
+  .menudiv ul li a:hover  {
+
+    background-color: #f2b607;
+
+}
+ 
+#logo
+{
+    background-repeat:no-repeat;
+    background-position:center;
+   background-color:#f2b607;
+   height:150px;
+   margin:auto;
+   background-image:url(Resimler/k21.jpg);
+    }
+    
+#golge
+{
+   background-image:url(Resimler/golge.jpg);
+   width:800px;
+   height:30px;
+   margin:auto;
+    }
+    #icerik1
+    {
+       width:800px;
+       height:80px;
+       margin:auto;
+       background-image:url(Resimler/2.jpg);
+        }
+      
+    #icerik
+{    
+       width:800px;
+       height:auto;
+       margin:auto;
+       background-image:url(Resimler/4.jpg);
+      
+        }
+        
+    #icerik2
+    {
+       width:800px;
+       height:80px;
+       margin:auto;
+       background-image:url(Resimler/3.jpg);
+        }
+  #metin
+  {
+       margin-left:50px;
+       margin-right:50px;
+      }
+      #metin1
+      {
+          margin-left:100px;
+       margin-right:100px;
+          }
+#haber
+{
+    width:230px;
+    margin-left:50px;
+    background-color:Fuchsia; 
+    }
+ #adres
+ {
+     background-color:Black;
+     height:40px;
+     }

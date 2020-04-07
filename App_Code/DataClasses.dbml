@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="anaokul" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BUSRAK\SQLEXPRESS;Initial Catalog=anaokul;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="anaokulConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.kitap" Member="kitaps">
+    <Type Name="kitap">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="k_adi" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="yazar" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="k_turu" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="yayinevi" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.hasta" Member="hastas">
+    <Type Name="hasta">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ogrenci_no" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="g_tarih" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="c_tarih" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="rahatsizlik" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="tedavi" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ogrenci" Member="ogrencis">
+    <Type Name="ogrenci">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ogrenci_no" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="ad_soyad" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="cinsiyet" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="tc_no" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="dogum_tarih" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="veli_adi" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="donem" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="kan_grub" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="telefon" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="şube" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="adres" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="ogretmen" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.haber_resim" Member="haber_resims">
+    <Type Name="haber_resim">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="resimyolu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="h_yazi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.etkinlik_resim" Member="etkinlik_resims">
+    <Type Name="etkinlik_resim">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="resimyolu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="r_yazi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.duyuru_resim" Member="duyuru_resims">
+    <Type Name="duyuru_resim">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="resimyolu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="d_yazi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
